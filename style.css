@@ -1,4 +1,79 @@
+.profile-card {
+  background-color: hsla(60, 100%, 50%, .4);
+}
+
+.head {
+  background-color: rgba(0, 255, 0, 0);
+}
+.content {
+  background-color: rgba(239, 240, 245, 0);
+}
+
+.profile-image {
+  background-color: rgba(255, 0, 255, 0);
+}
+
+.name-headline {
+  background-color: rgba(255, 0, 255, 0);
+}
+
+.about {
+  background-color: rgba(17, 2, 17, 0);
+}
+
+.links {
+  background-color: rgba(247, 241, 247, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
   img {
-    width: 200px;
-    height: auto;
+    width: 150px;
+height: auto;
+transition: all 0.5s ease-in-out;
+border: 5px solid rgb(12, 0, 0);
+  border-bottom: 5px solid rgb(14, 0, 0);
   }
+  img:hover {
+    filter: grayscale(20%);
+    transform: scale(1.1);
+  }
+  body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(assets/american-flag.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Times New Roman";
+  }
+  .head, .links {
+text-align: center;
+
+  }
+  .profile-card {
+  background-color: rgba(170, 166, 149, 0.712);
+  border-radius: 5px;
+  box-shadow: rgba(221, 4, 4, 0.8) 10px 10px 100px;
+  width: 380px;
+  max-width: calc(100vw - 10px);
+  height: 500px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.content, .links {
+  position: relative;
+  top: 25px;
+}
